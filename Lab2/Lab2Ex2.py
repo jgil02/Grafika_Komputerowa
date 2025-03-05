@@ -18,12 +18,6 @@ POMARANCZOWY = (255, 165, 0)
 NIEBIESKI = (0, 0, 255)
 SZARY = (128, 128, 128)
 
-dziala = True
-while dziala:
-    for zdarzenie in pygame.event.get():
-        if zdarzenie.type == pygame.QUIT:
-            dziala = False
-
 def rysunek1(powierzchnia):
     pygame.draw.circle(powierzchnia, CZARNY, (150, 150), 100)
     pygame.draw.rect(powierzchnia, ZOLTY, (100, 100, 100, 100))
@@ -53,6 +47,12 @@ def rysunek4(powierzchnia):
     pygame.draw.rect(powierzchnia, CZERWONY, (350, 375, 150, 10))
     rysuj_obrocony_prostokat(ekran, CZERWONY, 425, 441, 190, 10, 40)
     pygame.draw.rect(powierzchnia, CZERWONY, (350, 500, 150, 10))
+
+dziala = True
+while dziala:
+    for zdarzenie in pygame.event.get():
+        if zdarzenie.type == pygame.QUIT:
+            dziala = False
 
     ekran.fill(BIALY)
 
