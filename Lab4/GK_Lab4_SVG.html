@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GK_Lab4_SVG</title>
+</head>
+<body>
+    <svg width="1000" height="800" viewBox="0 0 1000 800">
+
+         <!-- Belki -->
+         <rect x="320" y="290" width="200" height="17" fill="red" transform="rotate(20 410 310)"/>
+         <rect x="95" y="160" width="150" height="15" fill="red" transform="rotate(20 162 180)"/>
+         <rect x="510" y="125" width="130" height="12" fill="red" transform="rotate(20 570 130)"/>
+
+        <!-- Trojkaty -->
+        <polygon points="400,420 420,300 440,420" fill="blue"/>
+        <polygon points="150,270 170,170 190,270" fill="purple"/>
+        <polygon points="550,220 570,130 590,220" fill="green"/>
+        
+        <!-- Aniomowane pieciokaty: -->
+         <!-- 1 belka: -->
+        <polygon points="105,107 67,135 81,179 129,179 143,135" stroke="black" fill="none">
+            <animateTransform attributeName="transform" type="rotate" from="0 105 147" to="360 105 147" dur="5s" repeatCount="indefinite"/>
+        </polygon>
+
+        <polygon points="250,155 212,183 226,227 274,227 288,183" stroke="black" fill="none">
+            <animateTransform attributeName="transform" type="rotate" from="0 250 195" to="360 250 195" dur="5s" repeatCount="indefinite"/>
+        </polygon>
+
+        <!-- 2 belka -->
+        <polygon points="330,225 287,256 304,306 356,306 373,256" stroke="black" fill="none">
+            <animateTransform attributeName="transform" type="rotate" from="0 330 270" to="360 330 270" dur="5s" repeatCount="indefinite"/>
+        </polygon>
+
+        <polygon points="520,290 477,321 494,371 546,371 563,321" stroke="black" fill="none">
+            <animateTransform attributeName="transform" type="rotate" from="0 520 335" to="360 520 335" dur="5s" repeatCount="indefinite"/>
+        </polygon>
+
+        <!-- 3 belka -->
+        <polygon points="515,75 482,99 494,138 536,138 548,99" stroke="black" fill="none">
+            <animateTransform attributeName="transform" type="rotate" from="0 515 110" to="360 515 110" dur="5s" repeatCount="indefinite"/>
+        </polygon>
+
+        <polygon points="640,115 607,139 619,178 661,178 673,139" stroke="black" fill="none">
+            <animateTransform attributeName="transform" type="rotate" from="0 640 150" to="360 640 150" dur="5s" repeatCount="indefinite"/>
+        </polygon>
+    </svg>
+</body> 
+</html>
